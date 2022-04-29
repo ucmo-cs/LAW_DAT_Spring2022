@@ -1,0 +1,140 @@
+/*
+    navbar.css
+
+    CS 4920 Senior Project - Spring 2022
+    Instructor: Taeghyun Kang
+    Team: LAW.DAT
+        Tyler Anderson
+        De-Shian Lin
+        Jacob Nicholson
+        Aaron Westhoff
+    
+    Charter and Go Project
+    Flight Risk Assessment Tool
+    
+
+    This style sheet is for components/Navbar.js
+*/
+
+/* import Roboto font from Google Fonts */
+/* Roboto is the font used in the InVision file that Charter and Go provided */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* use body to apply for all */
+body {
+    /* set Roboto font, if not found, use system defult sans-serif font */
+    font-family: 'Roboto', sans-serif;
+} /* it will render to all the page's body with navbar */
+
+/* the navigation bar on the top */
+.navbar {
+    /* height and padding */
+    height: 72px;
+    padding: .8em 1.25em;
+    /* padding: top/bottom  right/left */
+
+    /* shadow on the bottom */
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+
+    /* a little bit transparent white background*/
+    background-color: rgba(255, 255, 255, .95);
+
+    /* always show */
+    position: sticky;
+	top: 0; /* on the top */
+
+    /* make sure it's in the front (above 98 elements) */
+    z-index: 98;
+}
+
+/* project name */
+.project-name {
+    /* margin auto will make it to the center (evenly margin to the left and right)*/
+    margin: auto;
+    /* then make it close to the left */
+    margin-left: -.25em;
+
+    /* padding, size, and height adjust for lining up better with UCM logo */
+    padding-top: .35em;
+    font-size: .57em;
+    line-height: 1.2em;
+}
+
+/* buttons in the navigation bar */
+.nav-button {
+    /* since the buttons are on the right, set the left margin space */
+    margin-left: 1.25em;
+    
+    /* space inside */
+    padding: .5em 1.1em;
+    /* padding: top/bottom  right/left */
+
+    /* background color: Charter and Go logo's CH RTER blue */
+    background-color: #273c50;
+    
+    /* text color: color from the background of the InVision file that Charter and Go provided */
+    color: #eee;
+    
+    /* remove the original html link underline */
+    text-decoration: none;
+
+    /* transition makes it look smoothly when transition happens */
+    transition: .35s;
+
+    /* rounded corners */
+    border-radius: 5px;
+}
+
+/* when mouse hover on the buttons */
+.nav-button:hover {
+    /* background color: Charter and Go logo's GO grayish blue*/
+    background-color: #7e878f;
+
+    /* make the text white and glow */
+    color: #fff;
+    text-shadow: 0 0 6px #fff;
+
+    /* shodow makes it looks like flowing up */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+/* when the button is clicked (it's only one second effect) */
+.nav-button:active {
+    /* background color: color from the left menu of the InVision file that Charter and Go provided */
+    background-color: #262626;
+}
+
+/* the <hr> (thematic break) tag - line atfer the header form */
+hr {
+    /* make it center with good length */
+    text-align: center;
+    width: 700px;
+    
+    /* this will create double line look */
+    border-top: 3px double #333;
+    color: #fff;
+
+    /* item above it will be visible (so text can be added) */
+    overflow: visible;
+
+    /* some space to top and bottom */
+    margin: 2em auto 3em auto;
+}
+
+/* add text on the <hr> line */
+hr:after {
+    /* set background color, so it won't cover by line; also add some space */
+    background: #fff;
+    padding: 0 4px;
+
+    /* same color as the line */
+    color: #333;
+
+    /* wish to the pilot */
+    content: 'safe ☺ flight';
+
+    /* adjusting the size and position */
+    font-size: small;
+    position: relative;
+    top: -15px;
+}

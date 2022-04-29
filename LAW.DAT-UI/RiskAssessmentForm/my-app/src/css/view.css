@@ -1,0 +1,115 @@
+/*
+    view.css
+
+    CS 4920 Senior Project - Spring 2022
+    Instructor: Taeghyun Kang
+    Team: LAW.DAT
+        Tyler Anderson
+        De-Shian Lin
+        Jacob Nicholson
+        Aaron Westhoff
+    
+    Charter and Go Project
+    Flight Risk Assessment Tool
+    
+
+    This style sheet is for View.js
+*/
+
+/* the outmost frame to centralize the content */
+.main-frame {
+    /* margin: top/bottom  right/left */
+    margin: 2em auto;
+    /* right/left auto will make content to the center */
+
+    /* reasonable width */
+    max-width: 524px;
+}
+
+/* the colorful frames */
+.gray-frame,
+.green-frame,
+.orange-frame,
+.red-frame {
+    /* background */
+    background-color: #fff;
+    background-image: url('../images/bg.png');
+    background-position: 141% 86%;
+    background-repeat: no-repeat;
+
+    /* 100% width to fullfild the main-frame max-width */
+    width: 100%;
+
+    /* transition makes it look smoothly when moved */
+    transition: .5s;
+
+    /* spaces inside and outside */
+    padding: 24px 32px 14px 32px;
+    margin: 1.15em;
+    
+    /* rounded corners */
+    border-radius: 10px;
+}
+
+/* the colorful lines and shadows */
+.gray-frame{
+    border: 2px solid rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+.green-frame{
+    border: 2px solid rgba(0, 210, 106, .5);
+    box-shadow: 0px 0px 2px rgb(0, 210, 106);
+}
+.orange-frame{
+    border: 2px solid rgba(255, 130, 45, .5);
+    box-shadow: 0px 0px 2px rgb(255, 130, 45);
+}
+.red-frame{
+    border: 2px solid rgba(248, 49, 47, .5);
+    box-shadow: 0px 0px 2px rgb(248, 49, 47);
+}
+
+/* when mouse hover on the frames */
+.gray-frame:hover,
+.green-frame:hover, 
+.orange-frame:hover, 
+.red-frame:hover {
+    /* make them bigger */
+    transform: scale(1.04);
+
+    /* shodow makes it looks like flowing up */
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, .1);
+}   
+
+/* the titles inside frames */
+.trip-number-title{
+    font-size: x-large;
+    margin-bottom: .5em;
+}
+
+/* block for info. e.g. 
+Date
+Wed Apr 27 2022 */
+.info-block{
+    /* width short enough not to overflow but also long enough for the data not to break */
+    width: 180px;
+
+    /* div with this attribute will line up each after (not change line unless overflowed) */
+    display: inline-block;
+
+    /* some spaces to the right and bottom */
+    margin-bottom: 1.3em;
+
+    vertical-align: top;
+
+    /* go next line when a line is too long */
+    overflow-wrap: break-word;
+}
+
+/* take off the original html link color(blue) and underline */
+/* this is for an <a> tag to use */
+/* (in React.js with react-router-dom <Link> tag will be render as <a> tag)*/ 
+.detail-link, .detail-link:hover{
+    text-decoration: none;
+    color: #000;
+}

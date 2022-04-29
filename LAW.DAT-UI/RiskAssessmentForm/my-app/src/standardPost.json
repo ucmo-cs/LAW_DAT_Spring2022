@@ -1,0 +1,263 @@
+{
+    "params": {
+        "httpMethod": "POST"
+    },
+    "body": {
+        "header":{
+            "date": null,
+            "departure": null,
+            "destination": null,
+            "tripNum": null,
+            "tailNum": null,
+            "totalRisk": null
+        },
+        "sections": [
+            {
+                "title": "Pilot Qualifications and Experience",
+                "sectionTotal": 0,
+                "contents": [
+                    {
+                        "lineNumber": 1,
+                        "description": "Captain with less than 200 hours in type ",
+                        "maxVal": 5,
+                        "input": 0  
+                    },
+                    {
+                        "lineNumber": 2,
+                        "description": "First Officer with less than 200 hours in type",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 3,
+                        "description": "Single Pilot Flight ",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 4,
+                        "description": "Captain with less than 100 hours last 90 days ",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 5,
+                        "description": "First Officer with less than 100 hours last 90 days",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 6,
+                        "description": "Duty day greater than 12 hours",
+                        "maxVal": 4,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 7,
+                        "description": "Flight time (Greater than 8 hours in the duty day)",
+                        "maxVal": 4,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 8,
+                        "description": "Crew Rest (Less than 10 hours prior to the duty day)",
+                        "maxVal": 5,
+                        "input": 0
+                    }
+                ]
+            },
+            {
+                "title": "Operating Environment",
+                "sectionTotal": 0,
+                "contents": [
+                    {
+                        "lineNumber": 9,
+                        "description": "VOR/GPS/LOC/ADF (Best approach available w/o vertical guidance)",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 10,
+                        "description": "Circling approach (best available approach)",
+                        "maxVal": 4,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 11,
+                        "description": "No published approaches",
+                        "maxVal": 4,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 12,
+                        "description": "Mountainous airport ",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 13,
+                        "description": "Control tower not operational at ETA or ETD",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 14,
+                        "description": "Uncontrolled airport",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 15,
+                        "description": "Alternate airport not selected ",
+                        "maxVal": 4,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 16,                    
+                        "description": "Elevation of primary airport greater than 5000 ft. MSL) ",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 17,
+                        "description": "Wet runway",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 18,
+                        "description": "Contaminated runway ",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 19,
+                        "description": "Winter operation ",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 20,
+                        "description": "Twilight operation ",
+                        "maxVal": 2,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 21,
+                        "description": "Night operation ",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 22,
+                        "description": "Stopping distance greater than 80% of available runway ",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 23,
+                        "description": "Repositioning flight (no passengers or cargo) ",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 24,
+                        "description": "Pop up trip (Less than 4 hours crew notice) ",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 25,
+                        "description": "International operation ",
+                        "maxVal": 2,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 26,
+                        "description": "No weather reporting at destination ",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 27,  
+                        "description": "Thunderstorms at departure and/or destination ",
+                        "maxVal": 4,
+                        "input": 0 
+                    },
+                    {
+                        "lineNumber": 28,
+                        "description": "Severe turbulence ",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 29,
+                        "description": "Ceiling & visibility at destination less than 500 ft. / 2 sm ",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 30,
+                        "description": "Heavy rain at departure and/or destination ",
+                        "maxVal": 5,
+                        "input": 0  
+                    },
+                    {
+                        "lineNumber": 31,
+                        "description": "Frozen precipitation at departure and/or destination ",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 32,
+                        "description": "Icing (moderate-severe) ",
+                        "maxVal": 5,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 33,
+                        "description": "Surface winds greater than 30 knots ",
+                        "maxVal": 4,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 34,
+                        "description": "Crosswinds greater than 15 knots ",
+                        "maxVal": 4,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 35,
+                        "description": "Runway braking action less than good ",
+                        "maxVal": 5,
+                        "input": 0
+                    }
+                ]
+            },
+            {
+                "title": "Equipment",
+                "sectionTotal": 0,
+                "contents": [
+                    {
+                        "lineNumber": 36,
+                        "description": "Special Flight Permit Operation (ferry permit) ",
+                        "maxVal": 3,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 37,
+                        "description": "MEL / CDL Items (items related to safety of flight)",
+                        "maxVal": 2,
+                        "input": 0
+                    },
+                    {
+                        "lineNumber": 38,
+                        "description": "Special flight limitations based on AFM equipment limitations ",
+                        "maxVal": 2,
+                        "input": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

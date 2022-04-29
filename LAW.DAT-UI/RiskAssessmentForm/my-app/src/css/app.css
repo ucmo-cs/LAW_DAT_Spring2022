@@ -1,0 +1,155 @@
+/* 
+    app.css
+
+    CS 4920 Senior Project - Spring 2022
+    Instructor: Taeghyun Kang
+    Team: LAW.DAT
+        Tyler Anderson
+        De-Shian Lin
+        Jacob Nicholson
+        Aaron Westhoff
+    
+    Charter and Go Project
+    Flight Risk Assessment Tool
+    
+
+    This style sheet is for
+        App.js
+        detail_components/Detail_App.js
+*/
+
+/* the outmost frame to centralize the content */
+.form-main-frame {
+    /* margin: top/bottom  right/left */
+    margin: 1.5em auto;
+    /* right/left auto will make content to the center */
+
+    /* reasonable width */
+    max-width: 800px;
+}
+
+/* outer div of the submit button */
+.submit-button-div {
+    /* these will make the content to the center */
+    display: flex;
+    justify-content: center;
+}
+
+/* the submit button  */
+.submit-button-div > button {
+    /* space to the top */
+    margin-top: 3em;
+
+    /* space inside */
+    padding: .5em 1em;
+    /* padding: top/bottom  right/left */
+
+    /* background color: Charter and Go logo's CH RTER blue*/
+    background-color: #273c50;
+    
+    /* text color: color from the background of the InVision file that Charter and Go provided */
+    color: #eee;
+    
+    /* unset the original html button border */
+    border: none;
+
+    /* transition makes it look smoothly when transition happens */
+    transition: .4s;
+
+    /* this will make transition goes from fast start to slow end */
+    transition-timing-function: ease-out;
+    /* it's only a minor effect, but it's nicer */
+
+    /* rounded corner */
+    border-radius: 50px;
+}
+
+/* when mouse hover on the buttons */
+.submit-button-div > button:hover {
+    /* background color: Charter and Go logo's A red */
+    background-color: #e9180c;
+
+    /* make the text white and glow */
+    color: #fff;
+    text-shadow: 0 0 6px #fff;
+
+    /* shodow makes it looks like flowing up */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+/* when the button is clicked (it's only one second effect) */
+.submit-button-div > button:active {
+    /* background color: color from the left menu of the InVision file that Charter and Go provided */
+    background-color: #262626;
+}
+
+/* for message display */
+.error-message {
+    text-align: center;
+    color: red;
+}
+.success-message {
+    text-align: center;
+    color: rgb(0, 210, 106);
+}
+
+/* trip title info for the edit page */
+.trip-title-info {
+    /* make it center */
+    display: flex;
+    justify-content: center;
+
+    /* line up as next line column */
+    flex-direction: column;
+
+    /* font size and height*/
+    font-size: x-large;
+    line-height: 1.25em;
+
+    /* margin to top when under navbar */
+    margin-top: 1.6em;
+
+    /* stick it to the top when scrolling */
+    position: sticky;
+    top: 10px; /* space to the top */
+    z-index: 99; /* bring it to the most front */
+}
+
+/* # Trip Number */
+.trip-title-info > span{
+    color: #7e878f;
+    text-align: center;
+}
+
+/* risk number with icon */
+.trip-status {
+    /* set relative position as a container for absolute position items inside to be able to line up with it */
+    position: relative;
+
+    /* text style */
+    text-align: center;
+    color: white;
+    font-size: 2.25em;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+/* 'RISK' inside icon */
+.trip-risk-text {
+    font-size: .33em;
+    line-height: 0;
+}
+
+.trip-risk-number {
+    /* align it to the center inside icon */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -67%);
+    /* adjust it to vertical center */
+
+    /* text style */
+    font-size: .4em;
+    line-height: .95em;
+    text-align: center;
+}

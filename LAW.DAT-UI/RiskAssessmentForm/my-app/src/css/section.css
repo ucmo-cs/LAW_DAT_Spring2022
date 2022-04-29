@@ -1,0 +1,237 @@
+/* 
+    section.css
+
+    CS 4920 Senior Project - Spring 2022
+    Instructor: Taeghyun Kang
+    Team: LAW.DAT
+        Tyler Anderson
+        De-Shian Lin
+        Jacob Nicholson
+        Aaron Westhoff
+    
+    Charter and Go Project
+    Flight Risk Assessment Tool
+    
+
+    This style sheet is for
+        components/Section.js
+        detail_components/Detail_Section.js
+*/
+
+
+/*** start accordion ***/
+
+    .accordion-title {
+        /* these will make items to have evenly divided spaces inside */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* position:sticky;
+        top: 72px;
+        z-index: 97; */
+
+        /* width lining up with other elements on the page */
+        width: 696px;
+        
+        /* some spaces */
+        margin: 1.5em auto;
+        /* marging: top/bottom  right/left */
+        /* (right/left auto will make content to the center) */
+        padding: 1rem;
+
+        /* cursor will be the little white hand pointing */
+        cursor: pointer;
+
+        /* rounded corners */
+        border-radius: 5px;
+
+        /* transition makes it look smoothly when transition happens */
+        transition: .4s;
+
+        /* text color: Charter and Go logo's CH RTER blue */
+        color: #273c50;
+
+        /* bold font */
+        font-weight: 700;
+
+        /* shadow */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    }
+
+    /* this is for the emoji used */
+    .gray-out-text {
+        filter: grayscale(100%);
+    } /* make the toggle🔺 gray color */
+
+    /* when mouse hover on the accordion-title */
+    .accordion-title:hover {
+        /* linear-gradient color */
+        /* set !important to take effect because it seems React changing state is conflicting it */
+        background: linear-gradient(145deg, #ffffff, #e6e6e6) !important;
+
+        /* larger shadow make it looks like flowing up  */
+        box-shadow: 10px 10px 20px #d9d9d9;
+    }
+
+    /* content inside the accordion */
+    .accordion-content {
+        /* these will make items to the center inside */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* item will change line inside */
+    }
+
+/*** end accordion ***/
+
+
+/*** start box ***/
+
+    /* boxes inside the accordion */
+    .boxStyle {
+        /* fixed width and height */
+        width: 340px;
+        height: 150px;
+
+        /* some spaces */
+        margin: .5em .5em;
+        padding: .7em;
+        
+        /* rounded corners */
+        border-radius: 10px;
+
+        /* shadow */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+
+        /* transition makes it look smoothly when transition happens */
+        transition: .4s;
+
+        /* set relative position as a container for absolute position items inside to be able to line up with it */
+        position: relative;
+    }
+
+    /* when mouse hover the boxes */
+    .boxStyle:hover {
+        /* background color: Charter and Go logo's CH RTER blue */
+        background-color: #273c50;
+    }
+
+    /* when mouse hover the boxes,  change the boxHeaderStyle style indide */
+    .boxStyle:hover > .boxHeaderStyle,
+    /* also the 'Flight Value' text style */
+    .boxStyle:hover > .flightValueStyle > span {
+        color: #fff;
+    }
+
+    /* the title inside the boxes */
+    .boxHeaderStyle {
+        /* large and bold font */
+        font-size: large;
+        font-weight: 700;
+        
+        /* transition makes it look smoothly when transition happens */
+        transition: .4s;
+    }
+
+    /* the flight value style */
+    .flightValueStyle {
+        /* position absolute to the bottom inside the boxes */
+        position: absolute;
+        bottom: .85em;
+        width: 100px;
+    }
+
+    /* the 'Flight Value' text */
+    .flightValueStyle > span {
+        /* make it absolute position for better alignment */
+        position: absolute;
+        left: .2em;
+        bottom: 3.3em;
+
+        /* smaller font */
+        font-size: .75em;
+    }
+
+/*** end box ***/
+
+
+/*** start <Select> tag ***/
+
+    /* css selectors are used here to control styles since the objects needed are created by React-Select component */
+    /* ^= means name start with */
+    /* $= means name end with */
+
+    /* the goal here is to make the dropdown menu to "dropright" horizontally and look nice and right */
+
+    /* selection bar */
+    div [class^=" css-"][class$="-control"] {
+        /* float left so that the behind element will follow right after */
+        float: left;
+
+        /* since the menus are always opened, hide it for better look */
+        visibility: hidden;
+
+        /* set width 0 but keep the height same so the elements following keep their position */
+        width: 0;
+        height: 1em;
+    }
+
+    /* I thought this was for the selection meun outer box, but apparently this will affect more than that */
+    /* it just work somehow */
+    div [id^="react-select-"] {
+        /* inline so that the options will line up horizontally */
+        display: inline;
+
+        /* tight up the space */
+        margin: 0;
+        width: fit-content;
+    }
+
+    /* selection meun */
+    div [class^=" css-"][class$="-MenuList"] {
+        /* tight up the space */
+        padding: 0;
+
+        /* line up inside */
+        padding-top: 5.54px;
+
+        /* height match to the hidden selection bar */
+        height: 38.5px;
+
+        /* to prevent getting scrollbar inside the menu */
+        overflow-y: hidden;
+    }
+
+    /* menu options */
+    div [class^=" css-"][class$="-MenuList"] > [class$="-option"] {
+        /* font size adjust for better line up */
+        font-size: 1.15em;
+
+        /* padding controls the size of a selecting element background */
+        padding: 8.285px 12px;
+        /* padding: top/down  left/right */
+
+        /* cursor will be the little white hand pointing */
+        cursor: pointer;
+    }
+
+    /* when hover menu options */
+    div [class^=" css-"][class$="-MenuList"] > [class$="-option"]:hover {
+        /* set background color */
+        background-color: #d9d9d9;
+    }
+    /* fisrt option in menu options */
+    div [class^=" css-"][class$="-MenuList"] > [class$="-option"]:first-child {
+        /* make the conrner rounded as the selection meun */
+        /* since I found out that when the option is selected, it shows sharp edges on one side */
+        border-radius: 3.5px 0 0 3.5px;
+        /* border-radius: top-left  top-right  bottom-right bottom-left */
+    }
+    /* last option */
+    div [class^=" css-"][class$="-MenuList"] > [class$="-option"]:last-child {
+        /* make the conrner rounded as the selection meun */
+        /* since I found out that when the option is selected, it shows sharp edges on one side */
+        border-radius: 0 3.5px 3.5px 0;
+        /* border-radius: top-left  top-right  bottom-right bottom-left */
+    }
+
+/*** end <Select> tag ***/
