@@ -1,0 +1,7 @@
+{
+    "params":{
+        "httpMethod": "DELETE",
+        "amount": "ONE",
+        "key": 501
+    }
+}

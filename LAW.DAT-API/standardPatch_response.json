@@ -1,0 +1,12 @@
+{
+    "statusCode": 200,
+    "request": "PATCH",
+    "key": 501,
+    "body": {
+        "acknowledged": true,
+        "modifiedCount": 1,
+        "upsertedId": null,
+        "upsertedCount": 0,
+        "matchedCount": 1
+    }
+}

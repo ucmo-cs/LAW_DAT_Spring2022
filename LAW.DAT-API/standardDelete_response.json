@@ -1,0 +1,9 @@
+{
+    "statusCode": 200,
+    "request": "DELETE",
+    "key": 501,
+    "body": {
+        "acknowledged": true,
+        "deletedCount": 1
+    }
+}

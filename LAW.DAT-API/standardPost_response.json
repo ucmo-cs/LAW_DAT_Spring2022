@@ -1,0 +1,11 @@
+{
+    "statusCode": 200,
+    "request": "POST",
+    "body": {
+        "date": "2022-02-02",
+        "departure": "Kansas City",
+        "destination": "St. Louis",
+        "tripNum": 501,
+        "tailNum": 1066
+    }
+}
