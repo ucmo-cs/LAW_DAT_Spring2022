@@ -1,5 +1,5 @@
 import { config } from 'dotenv';
-import { API_Handler } from './src/studentsCrud.js';
+import { API_Handler } from './src/crudService';
 
 export const handler = async(event) => {
     config();
